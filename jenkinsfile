@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/CG-FS-ABL/capgbankapp.git'
+                git 'https://github.com/veeranjaneyuluko/BankApp267.git'
 
                 // To run Maven on a Windows agent, use
                 bat "mvn -f Day1-BankApp/pom.xml  -Dmaven.test.failure.ignore=true clean package"
